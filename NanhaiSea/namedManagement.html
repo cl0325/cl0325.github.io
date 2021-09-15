@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命名管理</title>
+
+    <link rel="stylesheet" href="./css/namedManagement.css">
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <!-- 左边h1和选项列表  -->
+        <div class="leftbox">
+            <h1><a href="">渔业资源管理系统</a></h1>
+            <ul>
+                <li><a href="./index.html">GIS控制台</a></li>
+                <li><a href="./taskManagement.html">计划任务管理</a></li>
+                <li><a href="./production.html">成产主体库</a></li>
+                <li><a href="./namedManagement.html">命名管理</a></li>
+                <li><a href="./message.html">基础信息管理</a></li>
+                <li><a href="">系统管理</a></li>
+            </ul>
+        </div>
+        <!-- 左边h1和选项列表  -->
+        <!-- 右边登录 -->
+        <div class="register">
+            <span>
+                <img src="./img/portrait.jpg" alt="">
+            </span>
+            <div class="nickname">
+                <span>区级信息员:admin</span>
+                <img src="./img/pullDown.png" alt="">
+            </div>
+        </div>
+        <!-- 右边登录 -->
+    </header>
+    <!-- 导航栏 -->
+
+    <section>
+        <div class="inao">
+            <span>命名管理</span>
+        </div>
+        <div class="set">
+            <div class="fisheryTitle">
+                <strong>渔业资源管理系统</strong>
+                <span> /</span>
+                <strong>命名管理</strong>
+                <span> /</span>
+                <strong>命名管理</strong>
+            </div>
+            <div class="afterSetting">
+                <div class="namingRule">
+                    <label>命名规则设置</label>
+                    <input type="radio" checked id="nameEnabled" name="1">启用
+                    <input type="radio" id="nameNotEnabled" name="1">未启用
+                </div>
+                <div id="ullist">
+                    <div class="blockType">
+                        <label>地块类型前缀</label>
+                        <input type="radio" checked>启用
+                        <input type="radio">未启用
+                        <span><strong>示例</strong>鱼塘-</span>
+                    </div>
+                    <div class="townPrefix">
+                        <label>镇名字前缀</label>
+                        <input type="radio" checked>启用
+                        <input type="radio">未启用
+                        <span><strong>示例</strong>九江镇-</span>
+                    </div>
+                    <div class="illagersPrefix">
+                        <label>村名字前缀</label>
+                        <input type="radio" checked>启用
+                        <input type="radio">未启用
+                        <span><strong>示例</strong>水南村-</span>
+                    </div>
+                    <div class="digitalSuffix">
+                        <label>数字后缀</label>
+                        <input type="radio" checked>启用
+                        <input type="radio">未启用
+                        <span><strong>示例</strong>-1</span>
+                    </div>
+                    <div class="suffixLetters">
+                        <label>字母后缀</label>
+                        <input type="radio" checked>启用
+                        <input type="radio">未启用
+                        <span><strong>示例</strong>-A</span>
+                    </div>
+                    <div class="completeSample">
+                        <strong>完整示例</strong>
+                        <span>九江镇 - </span>
+                        <span>水南村 -</span>
+                        <span>鱼塘 -</span>
+                        <span>1</span>
+                    </div>
+                </div>
+
+                <button class="alter">修改</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/namedManagement.js"></script>
+</body>
+
+</html>

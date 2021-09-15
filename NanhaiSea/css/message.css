@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+    /* border-bottom: 2px solid white; */
+}
+
+.leftbox ul li a {
+    color: white;
+}
+
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+.box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.administrative {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    margin-top: 62px;
+    left: 0%;
+    border-right: 1px solid #ccc;
+}
+
+.administrative span {
+    box-sizing: border-box;
+    line-height: 56px;
+    width: 100%;
+    display: inline-block;
+    height: 56px;
+    padding: 0 20px;
+}
+
+.administrative span:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.adjusting {
+    height: 100vh;
+    width: calc(100vw - 317px);
+    margin-top: 62px;
+    /* width: 100px; */
+}
+
+.districtsTitle {
+    height: 62px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.districtsTitle strong {
+    font-size: 14px;
+    color: #333;
+}
+
+.districtsTitle span {
+    margin: 0 5px;
+}
+
+.areaClassification {
+    margin-top: 15px;
+    height: 352px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.townClass {
+    width: 395px;
+    height: 66px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.townClass :hover {
+    cursor: pointer;
+}
+
+.section {
+    width: 355px;
+    height: 26px;
+}
+
+.section:hover {
+    background: #F5F7FA;
+}
+
+.section span {
+    width: 42px;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    font-size: 14px;
+    color: #606266;
+}
+
+.regionalism {
+    width: 73%;
+    height: 353px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.regionalInfo {
+    height: 40px;
+    margin-bottom: 22px;
+    display: flex;
+}
+
+.regionalInfo label {
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    margin-right: 12px;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.regionalInfo span {
+    margin-right: 5px;
+    color: #f56c6c;
+}
+
+.regionalInfo input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+}
+
+.new-save-del {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+
+.increaseButton {
+    width: 112px;
+    height: 40px;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #409eff;
+    border: none;
+    color: white;
+}
+
+.saveButton {
+    width: 70px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 20px;
+    background: #409eff;
+    color: white;
+}
+
+.deleteButton {
+    width: 70px;
+    height: 40px;
+    border: none;
+    color: white;
+    background: #909399;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+
+.collect-staff {
+    height: 775px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.person-query {
+    height: 102px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+}
+
+.person-query form label {
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#gathersStaff {
+    width: 290px;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+}
+
+#role {
+    width: 120px;
+    height: 38px;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+}
+
+.personQueryButton {
+    width: 70px;
+    height: 40px;
+    margin-left: 62px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: #0086FF;
+}
+
+.personnelInformation {
+    height: 590px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dcdfe6;
+    margin-top: 1px;
+    box-sizing: border-box;
+}
+
+.messageHeader {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    border: 1px solid #dcdfe6;
+    border-right: none;
+}
+
+.messageHeader li {
+    width: 14.4%;
+    height: 48px;
+    border-right: 1px solid #dcdfe6;
+    padding: 0 10px;
+    line-height: 48px;
+}
+
+.data-dictionaries {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.typeInquire {
+    height: 102px;
+    border: 1px solid #dcdfe6;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.typeInquire form label {
+    height: 40px;
+    display: inline-block;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
+#typeName,
+#typeCoding {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+}
+
+.reset {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+    background: none;
+}
+
+.data-type-table {
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+}
+
+.increase-data-box {
+    height: 166px;
+    margin-top: 1px;
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.increase-data {
+    height: 126px;
+    border: 1px solid #dcdfe6;
+}
+
+.gutter {
+    height: 65px;
+    border-bottom: 1px solid #dcdfe6;
+    border-right: none;
+    display: flex;
+}
+
+.gutter li {
+    width: 20%;
+    border-right: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    padding: 0 10px;
+    line-height: 65px;
+}
+
+.No-data {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.No-data span {
+    width: 33%;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+
+.landManagement {
+    height: 365px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.cardClassify {
+    width: 395px;
+    height: 274px;
+    padding: 20px;
+    border: 1px solid #dcdfe6;
+    margin: 0 4px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cardClassify div {
+    height: 11%;
+}
+
+.land-category-number {
+    margin: 0 12px;
+    height: 360px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+    padding: 20px;
+}
+
+.category-name-Box,
+.category-class-Box,
+.category-numbe-Box {
+    height: 40px;
+    margin-bottom: 22px;
+    display: flex;
+}
+.category-color-Box{
+    height: 50px;
+    display: flex;
+    margin-bottom: 22px;
+}
+.land-category-number form label{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    margin-right: 12px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    line-height: 40px;
+}
+.land-category-number form label span{
+    color: #f56c6c;
+}
+#category-class-input,
+#category-name-input,
+#category-numbe-input{
+    width: 92%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 0 15px;
+}
+#category-color-input{
+    width: 106px;
+    height: 40px;
+    border: 1px solid #dcdfe6;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.save{
+    width: 70px;
+    height: 40px;
+    border: none;
+    background: #0086FF;
+    border-radius: 5px;
+    color: white;
+    margin-left: 92px;
+}

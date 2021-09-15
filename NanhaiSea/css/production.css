@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 60px;
+}
+.leftbox ul li a{
+    color: white;
+}
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+
+/* 生产主体库 */
+section {
+    display: flex;
+}
+
+.productionLibrary {
+    width: 356px;
+    border-right: 1px solid #ddd;
+    margin-top: 62px;
+}
+
+.fishpond{
+    top: 118px;}
+
+.subject,
+.fishpond {
+    width: 300px;
+    height: 56px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    line-height: 56px;
+}
+.subject:hover,
+.fishpond:hover{
+    background:rgba(0,0,0, 0.2);
+}
+.fishery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 62px;
+    overflow: scroll;
+}
+
+.fisheryTitle strong{
+    font-size: 14px;
+}
+.fisheryTitle {
+    width: 100%;
+    height: 62px;
+    border-bottom: 1px solid #ddd;
+    line-height: 22px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+.queryBox {
+    width: 100%;
+    height: 168px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.queryBox form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.queryBox input {
+    width: 202px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+}
+
+.queryBox span {
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.industry {
+    width: 188px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.industry input {
+    width: 14px;
+    height: 14px;
+}
+
+.queryButton {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.queryButton button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #868686;
+    background: #0086FF;
+}
+.queryButton .inquire{
+    border: none;
+}
+.queryButton .reset{
+    background: none;
+    color: #868686;
+    border: 1px solid #dcdfe6;
+}
+.reset:hover{
+    background: #e6f8ff;
+    border: 1px solid #0086FF;
+}
+.information {
+    width: 100%;
+    height: 777px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    align-content: flex-start;
+    overflow: hidden;
+    
+}
+.fishProduction{
+    width: 100%;
+    height: 777px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #868686;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    align-content: flex-start;
+    overflow: hidden;
+    background: #ddd;
+    display: none;
+}
+
+.inforTitle {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    align-content: flex-start;
+}
+
+.inforTitle span {
+    width: 185px;
+    height: 60px;
+    display: inline-block;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+}
+
+.importExport {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.importExport button {
+    width: 70px;
+    height: 36px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border:none;
+    background: #0086FF;
+    color: white;
+}
+.importExport .toLead{
+   background: #e6a23c;
+}
+.importExport .export{
+    background: #f56c6c;
+}
+.cell {
+    width: 100%;
+    height: 71px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+
+.subjectName,
+.contacts,
+.telephone,
+.sort,
+.tissue,
+.matrix,
+.location {
+    width: 185px;
+    height: 71px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    line-height: 47px;
+    font-size: 14px;
+    color: #606266;
+}
+
+.check {
+    height: 71px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    line-height: 47px;
+
+}
+
+.check button {
+    background: none;
+    border: none;
+    color: #0086FF;
+    margin: 0 10px;
+}
+
+/* 生产主体库 */

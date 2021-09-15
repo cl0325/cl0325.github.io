@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+}
+
+.leftbox ul li a{
+    color: white;
+}
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+section {
+    height: 100%;
+    display: flex;
+}
+
+.inao {
+    margin-top: 62px;
+    width: 355px;
+    height: 100vh;
+    border-radius: 1px solid #eee;
+}
+.inao :hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+.inao span {
+    width: 100%;
+    height: 56px;
+    display: inline-block;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 56px;
+}
+
+.set {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-left: 1px solid #ddd;
+    margin-top: 62px;
+}
+
+.fisheryTitle {
+    width: 100%;
+    height: 56px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+.fisheryTitle strong {
+    font-size: 14px;
+}
+.fisheryTitle span{
+    color: #868686;
+}
+.afterSetting {
+    width: 100%;
+    height: 475px;
+    margin: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.afterSetting input{
+    margin-top:25px;
+    margin: 0 10px;
+}
+
+.namingRule,
+.blockType,
+.townPrefix,
+.illagersPrefix,
+.digitalSuffix,
+.suffixLetters {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    line-height: 62px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.namingRule label,
+.blockType label,
+.townPrefix label,
+.illagersPrefix label,
+.digitalSuffix label,
+.suffixLetters label {
+    width: 100px;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.alter {
+    width: 60px;
+    height: 32px;
+    background: #0086FF;
+    margin-top: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}

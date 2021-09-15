@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(../img/background.png);
+}
+
+.supervisory {
+    width: 952px;
+    margin: auto;
+}
+
+.loginID {
+    width: 350px;
+    height: 692px;
+    margin: auto;
+}
+
+/* 标题 */
+.loginID h1 {
+    width: 350px;
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 114px;
+    padding-bottom: 30px;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 500;
+    align-content: space-between;
+}
+
+/* 标题 */
+
+
+/* 账号密码登录和手机号登录 */
+.TheLoginOptions {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #868986;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 15px;
+}
+
+.TheLoginOptions p {
+    width: 155px;
+    height: 40px;
+
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.TheLoginOptions p:hover {
+    color: #66b1ff;
+}
+
+#loginLeft {
+    border-bottom: 2px solid #409EFF;
+    color: #409EFF;
+}
+
+/* 账号密码登录和手机号登录 */
+
+/* 输入框 */
+.theLoginBox {
+    width: 350px;
+    height: 164px;
+}
+
+.theLoginBox button:hover {
+    transition: all .3s;
+    background: #66b1ff;
+}
+.MobileVerification form .authCode:hover{
+    transition: all .3s;
+   background: #95de64;
+}
+
+/* 账号密码登录 */
+
+.textArea form {
+    width: 350px;
+    height: 164px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+    justify-content: space-between;
+}
+
+.textArea input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    padding: 0 15px 0 30px;
+    box-sizing: border-box;
+    outline-color: #66b1ff;
+    display: inline-block;
+}
+
+.textArea input::-webkit-input-placeholder {
+    color: #dcdfe6;
+}
+
+.textArea button {
+    width: 350px;
+    height: 40px;
+    background: #409EFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 账号密码登录 */
+
+/* 手机号登录 */
+.MobileVerification form {
+    width: 350px;
+    height: 164px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+    justify-content: space-between;
+    display: none;
+}
+
+.MobileVerification input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    padding: 0 15px 0 30px;
+    box-sizing: border-box;
+    outline-color: #66b1ff;
+    display: inline-block;
+}
+
+.MobileVerification input::-webkit-input-placeholder {
+    color: #dcdfe6;
+}
+
+.MobileVerification {
+    width: 350px;
+    height: 164px;
+    display: flex;
+}
+
+.MobileVerification button {
+    width: 350px;
+    height: 40px;
+    background: #409EFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.MobileVerification form .authCode {
+    width: 112px;
+    height: 40px;
+    background: #85ce61;
+}
+
+.MobileVerification form #VerificationCode {
+    width: 232px;
+    height: 40px;
+}
+.cellPhoneNumberBox{
+    height: 62px;
+    position: relative;
+}
+.cellPhoneNumberBox2{
+    height: 62px;
+}
+.cellPhoneNumberBox span{
+    font-size: 12px;
+    color: red;
+}
+#formBox #worldLimit{
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    color: #909399;
+}
+#formBox2 #digitMobileToken{
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    color: #909399;
+    font-size: 12px;
+}
+.registerimg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: 10;
+}
+
+.enterPsswprdimg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+/* 手机号登录 */
+/* 输入框 */
+
+/* 忘记密码和信息员注册 */
+.forgetThePassword {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgetThePassword button {
+    font-size: 14px;
+    color: #409EFF;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.forgetThePassword a {
+    color: #409EFF;
+}
+
+/* 忘记密码 */
+/* 是否关闭提示框 */
+.whetherShut{
+    width: 420px;
+    height: 118px;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    border-radius: 4px;
+    display: none;
+    z-index: 1000;
+}
+.shut{
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: none;
+}
+.callOff{
+    width: 56px;
+    height: 32px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+}
+.determine{
+    width: 56px;
+    height: 32px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    background: #409EFF;
+    margin-left: 15px;
+}
+.whetherShut p{
+width: 400px;
+height: 24px;
+
+}
+/* 是否关闭提示框 */
+.forgetPassword {
+    width: 960px;
+    height: 432px;
+    background: white;
+    display: none;
+    margin: auto;
+    border-radius: 2px;
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 999;
+}
+
+/* 顶部忘记密码title */
+.passwordtitle {
+    width: 960px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.passwordtitle button {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: white;
+}
+
+/* 顶部忘记密码title */
+
+
+.verifyBar {
+    padding: 30px 20px;
+    width: 960px;
+    height: 308px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+
+.verifyBar span {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+#retrieve #passwordCell{
+    width: 40px;
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    right: 0;
+    color: #909399;
+}
+#affirmPassword #distinction{
+    width: 800px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+}
+.securityCodeBox .asterisk{
+    width: 20px;
+    color: red;
+    line-height: 48px;
+    text-align: center;
+}
+.verifyBar button {
+    width: 112px;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    background: white;
+}
+
+.verifyBar input {
+    width: 800px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #dcdfe6;
+    outline-color: #66b1ff;
+    box-sizing: border-box;
+}
+
+.securityCodeBox {
+    width: 920px;
+    height: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.securityCodeBox .securityCode {
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.closeModify{
+    width: 960px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 20px 20px;
+}
+.closeModify button{
+    width: 73px;
+    height: 40px;
+}
+.close{
+    background: #e6a23c;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-right: 15px;
+}
+.modify{
+    background: #409eff;;
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+}
+.securityCodeBox .PasswordHintbox{
+    width: 800px;
+    height: 22px;
+    /* background: red; */
+    display: inline-block;
+    line-height: 22px;
+    text-align: center;
+    color: red;
+}
+.securityCodeBox .getCodebox{
+    width: 800px;
+    height: 22px;
+    /* background: red; */
+    display: inline-block;
+    line-height: 22px;
+    text-align: center;
+    color: red;
+}
+.securityCodeBox .setupPasswordbox{
+    width: 800px;
+    height: 22px;
+    /* background: red; */
+    display: inline-block;
+    line-height: 22px;
+    text-align: center;
+    color: red;
+}
+/* 忘记密码 */
+/* 忘记密码和信息员注册 */
+
+/* 二维码 */
+.QRcode {
+    width: 350px;
+    height: 204px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.QRcode img {
+    width: 130px;
+    height: 130px;
+}
+
+.QRcode h5 {
+    width: 350px;
+    height: 18px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* 二维码 */
+
+/* 幕布  */
+.curtain {
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: none;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* 幕布  */
+
+/* 底部 */
+.bottom {
+    height: 30px;
+    margin-top: 190px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 底部 */

@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+    /* border-bottom: 2px solid white; */
+}
+
+.leftbox ul li a {
+    color: white;
+}
+
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+
+aside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 62px;
+}
+
+/* 采集中 */
+.gather {
+    display: flex;
+    width: 356px;
+    flex-wrap: wrap;
+    border-right: 2px solid #E4E7ED;
+    height: 200%;
+    overflow: scroll;
+}
+
+.gather::-webkit-scrollbar {
+    display: none;
+}
+
+.first {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E4E7ED;
+    margin-bottom: 15px;
+    position: fixed;
+    background: white;
+    z-index: 99999999;
+}
+
+.first span {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* --------------------------- */
+.townData {
+    width: 300px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.pastDue {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+    display: none;
+}
+
+/* 饼图数据 */
+.piedata {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: none;
+}
+
+/* 饼图数据 */
+
+#totalQuantity,
+#totalArea,
+#distribute,
+#value {
+    width: 270px;
+    height: 270px;
+}
+
+/* -------------------------- */
+#collection {
+    border-bottom: 4px solid #0086FF;
+}
+
+.dataGathering {
+    width: 268px;
+    height: 307px;
+    border-radius: 5px;
+    border: 1px solid #E4E7ED;
+    margin-bottom: 15px;
+}
+
+.select {
+    height: 53px;
+    padding: 15px 0;
+    font-size: 18px;
+    margin-bottom: 6px;
+    margin: 0 10px;
+}
+
+.select button {
+    width: 56px;
+    height: 28px;
+    border-radius: 5px;
+    color: white;
+    background: #0086FF;
+    margin-right: 10px;
+    border: none;
+}
+
+.startEnd {
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.startEnd strong {
+    width: 98px;
+    height: 16px;
+    display: inline-block;
+}
+
+.buttonSet {
+    height: 84px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.buttonSet button {
+    width: 98px;
+    height: 40px;
+    border-radius: 5px;
+    color: #0086FF;
+    border: #0086FF;
+    background: #ecf5ff;
+}
+
+.buttonSet button:hover {
+    background: #0086FF;
+    color: white;
+}
+
+.card {
+    width: 252px;
+    height: 54px;
+    margin: 10px 0;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.card strong {
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* 采集中 */
+
+/* 地图 */
+.map {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* 地图 */
+#mapvessel {
+    width: 1000px;
+    height: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.info {
+    z-index: 999;
+    width: auto;
+    min-width: 22rem;
+    padding: .75rem 1.25rem;
+    margin-left: 1.25rem;
+    position: fixed;
+    top: 1rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    font-size: 14px;
+    color: #666;
+    box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+}
+
+/* 地图 */
+.taskFlow {
+    height: 76px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #E4E7ED;
+}
+
+.taskFlow button {
+    height: 40px;
+    background: #0086FF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 20px;
+}
+
+.mapbox {
+    position: fixed;
+    top: 138px;
+    height: 257px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    z-index: 999999999999;
+}
+
+.mapbox form {
+    width: 308px;
+    height: 166px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#town,
+#village {
+    width: 102px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+#condition,
+#schema {
+    width: 231px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.disappear {
+    width: 44px;
+    height: 32.5px;
+    background: #0086FF;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    position: absolute;
+    top: 335px;
+    left: 300px;
+    z-index: 99999999;
+}
+
+.seek {
+    width: 89px;
+    height: 40px;
+    position: absolute;
+    top: 77px;
+    right: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #0086FF;
+}
+
+/* 地图 */

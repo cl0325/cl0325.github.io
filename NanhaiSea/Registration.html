@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Registration.css">
+</head>
+
+<body>
+    <h1>信息员注册</h1>
+
+    <div class="registry">
+        <div class="getBack">
+            <button><a href="register.html"><img src="./img/back.png" alt=""></a><a href="register.html">返回</a></button>
+            <span class="mainString">|</span>
+            <span >用户注册</span>
+        </div>
+        <div class="detailed">
+            <form action="">
+                <div class="detailedBox" id="realNameBox">
+                    <span class="asterisk">*</span><span>真实姓名</span>
+                    <input type="text" id="nameValidation" maxlength="30">
+                </div>
+                <div class="detailedBox" id="identificationBox">
+                    <span class="asterisk">*</span><span>身份证号码</span>
+                    <input type="text" id="identityCard" maxlength="18">
+                </div>
+                <div class="detailedBox">
+                    <span class="asterisk">*</span><span>初始密码</span>
+                    <input type="password" id="password" >
+                </div>
+                <div class="detailedBox" id="inconformityBox">
+                    <span class="asterisk">*</span><span>确认密码</span>
+                    <input type="password" id="confirmPassword">
+                </div>
+                <div class="detailedBox" id="cellBox">
+                    <span class="asterisk">*</span><span>手机号码</span>
+                    <input type="text" id="cell" maxlength="11">
+                </div>
+                <div class="detailedBox">
+                    <span class="asterisk">*</span><span>验证码</span>
+                    <input type="text" id="securityCode">
+                    <button>获取验证码</button>
+                </div>
+                <div class="streetTown">
+                    <span class="asterisk"></span><span>选择街镇</span>
+                    <select name="" id="streetTownbox1" >
+                        <option value="">桂城街道</option>
+                        <option value="">九江镇</option>
+                        <option value="">西樵镇</option>
+                        <option value="">丹灶镇</option>
+                        <option value="">狮山镇</option>
+                        <option value="">大沥镇</option>
+                        <option value="">里水镇</option>
+                    </select>
+                    <span>选择村居</span>
+                    <select name="" id="streetTownbox2">
+                        <option value="">桂一村</option>
+                        <option value="">桂二村</option>
+                        <option value="">桂二村</option>
+                        <option value="">桂二村</option>
+                        <option value="">桂二村</option>
+                        <option value="">桂二村</option>
+                        <option value="">桂二村</option>
+                    </select>
+                </div>
+                <div class="detailedBox" id="detailedBox">
+                    <span class="asterisk">*</span><span>申请理由</span>
+                <textarea name="" id="textareaBox" maxlength="500"></textarea>
+            </div>
+                <div class="resetbox">
+                    <span class="asterisk"></span><span></span>
+                    <button id="establish">立即创建</button>
+                    <button id="reset">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./js/Registration.js"></script>
+</body>
+
+</html>

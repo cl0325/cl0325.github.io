@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    position: fixed;
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+}
+
+.leftbox ul li a {
+    color: white;
+}
+
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+
+aside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 62px;
+}
+
+
+/* 管理日历 */
+.administrationCalendar {
+    width: 356px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    top: 62px;
+}
+
+/* 管理日历 */
+
+.myTask {
+    width: 300px;
+    height: 56px;
+    position: fixed;
+}
+.plan:hover{
+    background: rgba(0,0,0, 0.2);
+}
+#idc:hover {
+    /* background: black; */
+    background: rgba(0,0,0, 0.2);
+}
+.statistics:hover{
+    background:rgba(0,0,0, 0.2);
+}
+.toAudit:hover{
+    background:rgba(0,0,0, 0.2);
+}
+.noPass:hover{
+    background:rgba(0,0,0, 0.2);
+}
+.myTask span {
+    width: 300px;
+    height: 56px;
+    display: inline-block;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 56px;
+}
+
+#dataAuditing {
+    margin-top: 20px;
+    height: 150px;
+}
+
+#dataAuditing li {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.planManagement {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: scroll;
+
+}
+
+.breadcrumb {
+    width: 100%;
+    height: 62px;
+    border-bottom: 1px solid #ddd;
+    line-height: 22px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.missionName {
+    width: 100%;
+    height: 102px;
+    margin: 15px;
+    border: 1px solid #ebeef5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#query{
+background: #0086FF;
+color: white;
+}
+#reset{
+    border:1px solid #868686;
+}
+#reset:hover{
+    border:1px solid#0086FF;
+    background: #e6f8ff;
+}
+.missionName form {
+    width: 100%;
+    height: 92px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.missionName label {
+    width: 68px;
+    height: 40px;
+    margin-right: 12px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #606266;
+}
+
+.missionName input {
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ebeef5;
+    color: #ebeef5;
+}
+
+.missionName button {
+    width: 70px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+}
+
+/* ---------------------------------- */
+.createTask {
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border: 1px solid #ebeef5;
+    box-sizing: border-box;
+    display: block;
+    /* height: 632px;
+    overflow: hidden; */
+}
+
+.own1 {
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    background: #b7c5e6;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    display: none;
+}
+
+.own2 {
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    background: #898a8a;
+
+    border-radius: 5px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    display: none;
+}
+
+.own3 {
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    background: #d6e9cb;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    display: none;
+}
+
+/* ---------------------------------- */
+
+.filtration {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ebeef5;
+    border-radius: 5px;
+    align-content: flex-start;
+    margin-right: 10px;
+}
+
+.keywordSearch {
+    width: 370px;
+    height: 77px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebeef5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keywordSearch input {
+    width: 248px;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ebeef5;
+}
+
+.keywordSearch button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    background: #0086FF;
+    border: none;
+}
+
+.selective {
+    width: 370px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: flex-start;
+}
+
+.selective h3 {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ebeef5;
+    box-sizing: border-box;
+}
+
+.unchecked {
+    width: 328px;
+    height: 37px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ebeef5;
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.unchecked span {
+    width: 234px;
+    height: 37px;
+    display: inline-block;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #f0f9eb;
+    color: #67c23a;
+}
+
+.unchecked button {
+    width: 84px;
+    height: 36px;
+    border-radius: 5px;
+    color: white;
+    background: #85ce61;
+    border: none;
+}
+
+.appear {
+    width: 100%;
+    display: flex;
+
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.noData {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ebeef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #909399;
+}
+
+.radiaoBox {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ebeef5;
+    box-sizing: border-box;
+}
+
+.batchReview {
+    width: 100%;
+    height: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ebeef5;
+}
+
+.batchReview input {
+    width: 14px;
+    height: 14px;
+}
+
+.batchReview li {
+    height: 53px;
+    box-sizing: border-box;
+    padding: 12px 0;
+    border-right: 1px solid #ebeef5;
+}
+
+.batchReview li span {
+    width: 99px;
+    display: inline-block;
+    text-align: center;
+}
+
+.approveBox {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.approveBox button {
+    width: 80px;
+    height: 28px;
+
+}
+
+.batchTitle {
+    display: flex;
+}
+
+.createTitle {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    border-bottom: 1px solid #ebeef5;
+}
+
+.createID {
+    width: 60px;
+}
+
+.projectName {
+    width: 200px;
+}
+
+.startTime {
+    width: 160px;
+}
+
+.endTime {
+    width: 160px;
+}
+
+.taskState {
+    width: 80px;
+}
+
+.planCallsFor {
+    width: 629px;
+}
+
+.createButton {
+    width: 230px;
+}
+
+.createButton button {
+    width: 126px;
+    height: 40px;
+    background: #0086FF;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.createButton,
+.planCallsFor,
+.taskState,
+.endTime,
+.startTime,
+.projectName,
+.createID {
+    height: 45px;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #909399;
+}
+.createTitle span{
+    font-weight: 600;
+}
+.dataPackage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100%;
+    height: 590px; */
+    /* overflow: hidden; */
+    margin-bottom: 20px;
+}
+
+.dataTitlebox {
+    width: 100%;
+    border-bottom: 1px solid #ebeef5;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    height: 627px;
+}
+.dataTitle{
+    width: 100%;
+    border-bottom: 1px solid #ebeef5;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dataTitle:hover{
+    background: rgba(0,0,0, 0.1);
+}
+
+.createdata {
+    width: 60px;
+}
+
+.projectdata {
+    width: 200px;
+}
+
+.startdata {
+    width: 160px;
+}
+
+.enddata {
+    width: 160px;
+}
+
+.taskdata {
+    width: 80px;
+}
+
+.plandata {
+    width: 629px;
+}
+
+.createdataButton {
+    width: 230px;
+}
+
+.createdataButton button {
+    width: 26px;
+    height: 32px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    letter-spacing:-1px;
+    color: #409eff;
+}
+
+.createdata,
+.plandata,
+.taskdata,
+.enddata,
+.startdata,
+.projectdata,
+.createdataButton {
+    height: 32px;
+    margin: 12px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 32px;
+    color: #606266;
+}
+
+.pagination {
+    width: 100%;
+    height: 32px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination span {
+    margin: 0 5px;
+}
+
+#streetTown {
+    width: 100px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
+
+.pagination ul {
+    display: flex;
+    width: 160px;
+    height: 28px;
+    margin: 0 5px;
+}
+
+.pagination ul li {
+    width: 30px;
+    height: 28px;
+    border-radius: 5px;
+    background: cornflowerblue;
+    margin: 0 5px;
+}
+
+.pagination input {
+    width: 46px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}

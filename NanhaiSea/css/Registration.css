@@ -1,0 +1,259 @@
+h1 {
+    font-weight: 400;
+    margin-left: 33.3333%;
+}
+.registry{
+    width: 636px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ebeef5;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 顶部返回 */
+.getBack{
+    width: 596px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.getBack button{
+    width: 80px;
+    height: 24px;
+    border:none;
+    background: none;
+    display: inline-block;
+    display: flex;
+}
+.getBack a{
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #303133;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getBack img{
+    width: 18px;
+    height: 18px;
+}
+.getBack span {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #303133;
+}
+.getBack .mainString{
+    color: #dcdfe6;
+}
+/* 顶部返回 */
+
+/* 信息填写 */
+.detailed form{
+    width: 596px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.detailed span{
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    color: #606266;
+    font-size: 14px;
+}
+.detailed input{
+    width: 491px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #dcdfe6;
+    outline-color: #66b1ff;
+    padding: 0 15px;
+}
+.detailedBox button{
+    width: 112px;
+    height: 40px;
+    background: #409eff;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+    margin-left: 20px;
+    color: white;
+}
+.detailedBox{
+    width: 596px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+#realNameBox #realNameSpan{
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #909399;
+}
+#identificationBox #identificationSpan{
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #909399;
+}
+#cellBox #cellSpan{
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #909399; 
+}
+#detailedBox #detailedSpan{
+    position: absolute;
+    width: 68px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #909399;
+}
+#inconformityBox #inconformitySpan{
+    width: 491px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+    font-size: 12px;
+}
+.detailed .asterisk{
+    width: 15px;
+    color: red;
+    line-height: 46px;
+}
+#securityCode{
+    width: 227px;
+    height: 40px;
+}
+.streetTown{
+    width: 596px;
+    height: 60px;
+    display: flex;
+}
+#chooseStreetTown{
+    width: 173px;
+    height: 40px;
+    box-sizing: border-box;
+}
+#chooseVillageIn{
+    width: 173px;
+    height: 40px;
+    box-sizing: border-box;
+}
+#establish{
+    width: 98px;
+    height: 40px;
+    background: #409eff;
+    border:  1px solid #dcdfe6;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+}
+#reset{
+    width: 98px;
+    height: 40px;
+    border:  1px solid #dcdfe6;
+    border-radius: 5px;
+    background: white;
+}
+.streetTown select{
+    width: 173px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #dcdfe6;
+    outline-color: #66b1ff;
+}
+.streetTown #streetTownbox1{
+    display: inline-block;
+    margin-right: 70px;
+}
+.resetbox{
+    width: 596px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 22px;
+    align-items: flex-end;
+}
+.detailedBox textarea{
+    height: 40px;
+    outline-color: #66b1ff;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    min-height: 40px;
+    min-width: 491px;
+    resize: vertical;
+    padding: 5px 50px 5px 15px;
+}
+.detailed .nameValidationbox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+.detailed .identityCardbox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+.detailed .passwordbox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+.detailed .cellbox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+.detailed .securityCodebox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+.detailed .textareaBoxbox{
+    width: 491px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+/* 信息填写 */

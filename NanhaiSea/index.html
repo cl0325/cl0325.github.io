@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS控制台</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script><!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.0/dist/echarts.min.js"></script><!-- 饼图 -->
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=sL2W0qSfsCpLBzGs5g0D8Dqn0ekahujA"></script>
+    <!--百度地图 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <!-- 左边h1和选项列表  -->
+        <div class="leftbox">
+            <h1><a href="">渔业资源管理系统</a></h1>
+            <ul>
+                <li><a href="./index.html">GIS控制台</a></li>
+                <li><a href="./taskManagement.html">计划任务管理</a></li>
+                <li><a href="./production.html">成产主体库</a></li>
+                <li><a href="./namedManagement.html">命名管理</a></li>
+                <li><a href="./message.html">基础信息管理</a></li>
+                <li><a href="">系统管理</a></li>
+            </ul>
+        </div>
+        <!-- 左边h1和选项列表  -->
+        <!-- 右边登录 -->
+        <div class="register">
+            <span>
+                <img src="./img/portrait.jpg" alt="">
+            </span>
+            <div class="nickname">
+                <span>区级信息员:admin</span>
+                <img src="./img/pullDown.png" alt="">
+            </div>
+        </div>
+        <!-- 右边登录 -->
+    </header>
+
+    <aside>
+        <div class="gather">
+            <div class="first">
+                <span id="collection">采集中</span>
+                <span id="stale">已到期</span>
+                <span id="check">数据查看</span>
+            </div>
+            <div class="townData">
+
+            </div>
+            <div class="pastDue">
+
+            </div>
+            <div class="piedata">
+                <div id="totalQuantity"></div>
+                <div id="totalArea"></div>
+                <div id="distribute"></div>
+                <div id="value"></div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="taskFlow">
+                <button>区镇级管理员/创建任务计划</button>
+                <button>人去执行/数据标注/村居采集，镇/街区支持录入></button>
+                <button>任务数据查看/审核/镇街审核/区支持审核</button>
+            </div>
+            <div id="mapvessel">
+
+            </div>
+            <div id="container"></div>
+            <div class="mapbox">
+                <form action="">
+                    <span>当前辖区</span>
+                    <select name="" id="town">
+                        <option value="">全部</option>
+                    </select>
+                    <span>-</span>
+                    <select name="" id="village">
+                        <option value="">全部</option>
+                    </select>
+                    <span>图斑状态</span>
+                    <select name="" id="condition">
+                        <option value="">全部</option>
+                    </select>
+                    <span>任务模式</span>
+                    <select name="" id="schema">
+                        <option value="">全部</option>
+                    </select>
+                    <span>当前任务</span>
+                    <span>西樵镇数据采集08231434</span>
+                </form>
+
+            </div>
+            <button class="disappear">
+                -
+            </button>
+            <button class="seek">
+                搜索
+            </button>
+        </div>
+    </aside>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
