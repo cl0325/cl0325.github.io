@@ -181,6 +181,7 @@ header {
     box-shadow: 0px 0px 10px #eee;
     padding: 20px;
     box-sizing: border-box;
+
 }
 
 .townClass :hover {
@@ -288,6 +289,8 @@ header {
     height: 775px;
     margin: 20px;
     border-radius: 5px;
+    display: none;
+    flex-direction: column;
 }
 
 .person-query {
@@ -332,7 +335,7 @@ header {
 }
 
 .personnelInformation {
-    height: 590px;
+    height: 630px;
     width: 100%;
     padding: 20px;
     border: 1px solid #dcdfe6;
@@ -352,14 +355,20 @@ header {
     width: 14.4%;
     height: 48px;
     border-right: 1px solid #dcdfe6;
-    padding: 0 10px;
-    line-height: 48px;
+    line-height: 24px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
 }
 
 .data-dictionaries {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    display: none;
+    flex-direction: column;
 }
 
 .typeInquire {
@@ -426,11 +435,21 @@ header {
 .gutter li {
     width: 20%;
     border-right: 1px solid #dcdfe6;
+    line-height: 41px;
+    padding: 12px 10px;
     box-sizing: border-box;
-    padding: 0 10px;
-    line-height: 65px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
 }
-
+.gutter li button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #0086FF;
+}
 .No-data {
     width: 100%;
     height: 60px;
@@ -444,13 +463,16 @@ header {
     display: inline-block;
     text-align: center;
     line-height: 60px;
+    color: #909399;
+    font-size: 14px;
 }
 
 .landManagement {
-    height: 365px;
+    height: 402px;
     margin-top: 15px;
     box-sizing: border-box;
     display: flex;
+    display: none;
 }
 
 .cardClassify {
@@ -483,12 +505,14 @@ header {
     margin-bottom: 22px;
     display: flex;
 }
-.category-color-Box{
+
+.category-color-Box {
     height: 50px;
     display: flex;
     margin-bottom: 22px;
 }
-.land-category-number form label{
+
+.land-category-number form label {
     width: 80px;
     height: 40px;
     display: flex;
@@ -497,26 +521,30 @@ header {
     justify-content: space-between;
     line-height: 40px;
 }
-.land-category-number form label span{
+
+.land-category-number form label span {
     color: #f56c6c;
 }
+
 #category-class-input,
 #category-name-input,
-#category-numbe-input{
+#category-numbe-input {
     width: 92%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid #dcdcdc;
     padding: 0 15px;
 }
-#category-color-input{
+
+#category-color-input {
     width: 106px;
     height: 40px;
     border: 1px solid #dcdfe6;
     padding: 0 15px;
     border-radius: 5px;
 }
-.save{
+
+.save {
     width: 70px;
     height: 40px;
     border: none;
@@ -524,4 +552,147 @@ header {
     border-radius: 5px;
     color: white;
     margin-left: 92px;
+    
+}
+
+.dis {
+    display: none;
+}
+
+.personnellist {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    border: 1px solid #dcdfe6;
+    border-top: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.collectorsName,
+.collectorsrole,
+.collectorspopedom,
+.areaNumber,
+.identityCard,
+.contactWay,
+.createdataButton {
+    width: 217px;
+    height: 48px;
+    border-right: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 12px 10px;
+    color: #606266;
+}
+
+.pagination {
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.attributeTypes {
+    height: 65px;
+    border: 1px solid #eee;
+    display: flex;
+    border-right: none;
+}
+
+.radioButton-Title {
+    width: 50px;
+    height: 65px;
+    display: flex;
+    padding: 12px 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+}
+
+.radioButton-Title span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.property-mold,
+.type-Encoding,
+.newlyIncreased-Btn {
+    width: 32%;
+    border-right: 1px solid #eee;
+    line-height: 41px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+}
+
+.newlyIncreased-Btn button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    background: #0086FF;
+    color: white;
+    border: none;
+}
+
+.dictBox {
+    height: 50px;
+    border: 1px solid #eee;
+    display: flex;
+    border-top: none;
+}
+
+.dictRadio {
+    width: 50px;
+    height: 50px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #eee;
+}
+
+.dictRadio span {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+
+.attributeSet,
+.genreCoding {
+    width: 32%;
+    border-right: 1px solid #eee;
+    line-height: 26px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    color: #606266;
+    font-size: 14px;
+}
+.additionsDeletions{
+    padding: 12px 10px;
+width: 32%;
+box-sizing: border-box;
+}
+.additionsDeletions button{
+    margin-left:4px;
+    margin-right: 8px;
+    border: none;
+    color: #0086FF;
+    background: none;
 }

@@ -1,6 +1,6 @@
 axios.get('/NanhaiSea/json/index.json')
     .then(function (response) {
-        // 处理成功情况
+        
         // 采集中
         var townData = document.getElementsByClassName("townData")[0];
         for (let index = 0; index < response.data.length; index++) {

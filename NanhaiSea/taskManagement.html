@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="./css/taskManagement.css">
     <script src="js/jquery.js"></script>
     <script src="js/axios.js"></script>
-    <script src="js/mock.min.js"></script>
-    <script src="js/serve.js"></script>
+    <!-- <script src="js/mock.min.js"></script>
+    <script src="js/serve.js"></script> -->
 </head>
-
 <body>
     <!-- 导航栏 -->
     <header>
@@ -26,7 +25,7 @@
                 <li><a href="./production.html">成产主体库</a></li>
                 <li><a href="./namedManagement.html">命名管理</a></li>
                 <li><a href="./message.html">基础信息管理</a></li>
-                <li><a href="">系统管理</a></li>
+                <li><a href="./systemManage.html">系统管理</a></li>
             </ul>
         </div>
         <!-- 左边h1和选项列表  -->
@@ -104,28 +103,15 @@
                 </div>
                 <div class="dataPackage">
                     <div class="dataTitlebox" id="dataTitle">
+
                     </div>
 
                 </div>
 
                 <!-- 按钮 -->
                 <div class="pagination">
-                    <span>共 18 页</span>
-                    <select name="" id="streetTown">
-                        <option value="">桂城街道</option>
-                        <option value="">九江镇</option>
-                        <option value="">西樵镇</option>
-                        <option value="">丹灶镇</option>
-                        <option value="">狮山镇</option>
-                        <option value="">大沥镇</option>
-                        <option value="">里水镇</option>
-                    </select>
-                    <ul id="page">
-                        
-                    </ul>
-                    <span>前往</span>
-                    <input type="text" value="1">
-                    <span>页</span>
+                    <button class="page">1</button>
+                    <button class="page">2</button>
                 </div>
                 <!-- 按钮 -->
             </div>
@@ -444,64 +430,3 @@
 </body>
 
 </html>
-
-
-<!-- // 向给定ID的用户发起请求
-// axios.get('../NanhaiSea/json/2.json')
-//   .then(function (response) {
-//     // 处理成功情况
-//     var dataTitle = document.getElementById("dataTitle");
-//     for (let index = 0; index < response.data.length; index++) {
-//       var odiv = document.createElement("div");
-//       odiv.className = "dataTitle";
-//       // -------------------------------------------
-//       var createdata = document.createElement("div");
-//       createdata.className = "createdata";
-//       createdata.innerHTML = response.data[index].name;
-//       // -------------------------------------------
-//       var projectdata = document.createElement('div');
-//       projectdata.className = "projectdata";
-//       projectdata.innerHTML = response.data[index].projectName;
-//       // -------------------------------------------
-//       var startdata = document.createElement('div');
-//       startdata.className = "startdata";
-//       startdata.innerHTML = response.data[index].begin;
-//       // -------------------------------------------
-
-//       var enddata = document.createElement('div');
-//       enddata.className = "enddata";
-//       enddata.innerHTML = response.data[index].finish;
-//       // -------------------------------------------
-//       var taskdata = document.createElement('div');
-//       taskdata.className = "taskdata";
-//       taskdata.innerHTML = response.data[index].state;
-//       // -------------------------------------------
-//       var plandata = document.createElement('div');
-//       plandata.className = "plandata";
-//       plandata.innerHTML = response.data[index].state;
-//       // -------------------------------------------
-//       var createdataButton = document.createElement("div");
-//       createdataButton.className = "createdataButton";
-//       createdataButton.innerHTML = `
-//       <button>撤回</button>
-//       <button>停用</button>
-//           <button>查看</button>
-//           <button>编辑</button>`
-//       // -------------------------------------------
-//       dataTitle.appendChild(odiv);
-//       odiv.appendChild(createdata);
-//       odiv.appendChild(projectdata);
-//       odiv.appendChild(startdata);
-//       odiv.appendChild(enddata);
-//       odiv.appendChild(taskdata);
-//       odiv.appendChild(plandata);
-//       odiv.appendChild(createdataButton);
-//     }
-//   })
-//   .catch(function (error) {
-//     // 处理错误情况
-//     console.log(error);
-//   })
-//   .then(function () {
-//     // 总是会执行
-//   }); -->

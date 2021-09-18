@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>基础信息管理</title>
     <link rel="stylesheet" href="./css/message.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/axios.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
                 <li><a href="./production.html">成产主体库</a></li>
                 <li><a href="./namedManagement.html">命名管理</a></li>
                 <li><a href="./message.html">基础信息管理</a></li>
-                <li><a href="">系统管理</a></li>
+                <li><a href="./systemManage.html">系统管理</a></li>
             </ul>
         </div>
         <!-- 左边h1和选项列表  -->
@@ -40,10 +42,10 @@
     <!-- 导航栏 -->
     <section class="box">
         <div class="administrative">
-            <span class="administrativeDivision">行政区划</span>
-            <span>采集人员</span>
-            <span>数据字典</span>
-            <span>土地类别管理</span>
+            <span class="button1">行政区划</span>
+            <span class="button2">采集人员</span>
+            <span class="button3">数据字典</span>
+            <span class="button4">土地类别管理</span>
         </div>
         <div class="adjusting">
             <div class="districtsTitle">
@@ -123,6 +125,14 @@
                             <li>联系方式</li>
                             <li>操作</li>
                         </ul>
+                        <div class="Jurisdiction">
+
+                        </div>
+
+                        <div class="pagination">
+                            <button class="page">1</button>
+                            <button class="page">2</button>
+                        </div>
                     </div>
                 </div>
                 <!-- 采集人员 -->
@@ -132,14 +142,35 @@
                     <div class="typeInquire">
                         <form action="">
                             <label for="">类型名</label>
-                            <input type="text" id="typeName">
+                            <input type="text" id="typeName" placeholder="亲输入属性类型" >
                             <label for="">类型编码</label>
-                            <input type="text" id="typeCoding">
+                            <input type="text" id="typeCoding" placeholder="亲输入属性类型编码">
                             <button class="personQueryButton">查询</button>
                             <button class="reset">重置</button>
                         </form>
                     </div>
                     <div class="data-type-table">
+                        <div class="attributeTypes">
+                            <div class="radioButton-Title">
+                                <span></span>
+                            </div>
+                            <div class="property-mold">
+                                <span>属性类型</span>
+                            </div>
+                            <div class="type-Encoding">
+                                <span>属性类型编码</span>
+                            </div>
+                            <div class="newlyIncreased-Btn">
+                                <button>新增</button>
+                            </div>
+                        </div>
+                        <div class="attributeTypesData">
+
+                        </div>
+                        <div class="pagination">
+                            <button class="pagetwo">1</button>
+                            <button class="pagetwo">2</button>
+                        </div>
                     </div>
                     <div class="increase-data-box">
                         <div class="increase-data">
@@ -148,7 +179,7 @@
                                 <li>属性编码</li>
                                 <li>属性值</li>
                                 <li>属性值说明</li>
-                                <li>新增</li>
+                                <li><button>新增</button></li>
                             </ul>
                             <div class="No-data">
                                 <span>暂无数据</span>
@@ -210,7 +241,7 @@
             </div>
         </div>
     </section>
-    
+
     <script src="./js/message.js"></script>
 
 </body>

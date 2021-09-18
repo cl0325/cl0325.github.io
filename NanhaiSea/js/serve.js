@@ -1,13 +1,13 @@
 let data = Mock.mock({
-    "list|50": [{
+    "list|30": [{
         "area": null,
         "id|+1": 472,
         "collectTaskLandRs": null,
         "createPerson": "admin",
         "planStatus": 1,
         "planFiles": "",
-        "treeData": null,
-        "ossImgList": null,
+        "treeData": "@id",
+        "ossImgList": '@natural',
         "planName": '@cname',
         "collectTasks": [{
             "id": 16978,
@@ -31,7 +31,8 @@ let data = Mock.mock({
         "planType": null,
         "updatePerson": "admin",
         "planRequire": "打视",
-        "dataCount": 0
+        "dataCount": 0,
+        
     }]
 })
 

@@ -1,0 +1,818 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 62px;
+    background: #0086FF;
+    display: flex;
+    position: fixed;
+}
+
+/* 左边h1和选项列表 */
+.leftbox {
+    width: 100%;
+    height: 62px;
+    display: flex;
+
+}
+
+.leftbox h1 {
+    width: 400px;
+    height: 62px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.leftbox h1 a {
+    width: 128px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    color: white;
+}
+
+.leftbox ul {
+    display: flex;
+    width: 716px;
+    height: 61px;
+}
+
+.leftbox ul li {
+    height: 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+    /* border-bottom: 2px solid white; */
+}
+
+.leftbox ul li a {
+    color: white;
+}
+
+/* 左边h1和选项列表 */
+
+/* 右边登录 */
+.register {
+    width: 199px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.register span img {
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.nickname {
+    width: 132px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.register .nickname span {
+    width: 132px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    list-style: none;
+    line-height: 14px;
+}
+
+.register .nickname img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 右边登录 */
+section {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+}
+
+.organizationBox {
+    width: 16%;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    margin-top: 62px;
+    position: fixed;
+    left: 0;
+}
+
+.fisheryManage-Box {
+    width: calc(100vw - 17%);
+    height: 100vh;
+    margin-top: 62px;
+}
+
+.organizationBox span {
+    display: inline-block;
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    line-height: 56px;
+    box-sizing: border-box;
+}
+
+.districtsTitle {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 10px;
+}
+
+.newTissue {
+    height: 539px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    padding: 20px;
+}
+
+.tissueSeek {
+    width: 503px;
+    height: 180px;
+    margin: 15px 4px 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tissueSeek-Title {
+    height: 75px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.tissueSeek-Title button {
+    width: 89px;
+    height: 36.5px;
+    border-radius: 5px;
+    border: none;
+    background: #0086FF;
+    color: white;
+}
+
+.filtration {
+    height: 106px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.filtration input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.district {
+    width: 100%;
+}
+
+.organForm {
+    width: 100%;
+    height: 550px;
+
+}
+
+.organForm form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.institutionName,
+.forShort,
+.superior,
+.serialNumber,
+.linkman,
+.contactNumber,
+.location,
+.detailedAddress {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.institutionName input,
+.forShort input,
+.serialNumber input,
+.linkman input,
+.contactNumber input,
+.detailedAddress input {
+    width: 92%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.superior input,
+.location input {
+    width: 217px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.organForm form label {
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    padding-right: 12px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+
+.asterisk {
+    color: red;
+    margin-right: 4px;
+}
+
+.remark {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 22px;
+}
+
+.remark textarea {
+    width: 92%;
+    height: 54px;
+    outline-color: #66b1ff;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    min-height: 40px;
+    min-width: 491px;
+    resize: vertical;
+    padding: 5px 50px 5px 15px;
+}
+
+.personnel {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    display: none;
+}
+
+.nameInquire {
+    width: 100%;
+    height: 102px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nameInquire form input {
+    width: 217px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.nameInquire form {
+    display: flex;
+}
+
+.nameInquire form button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.nameInquire form label {
+    display: inline-block;
+    font-size: 14px;
+    color: #606266;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.inquire-button {
+    background: #0086FF;
+    margin: 0 15px;
+}
+
+.nameInquire form .reset-button {
+    background: none;
+    border: 1px solid #ddd;
+    color: #606266;
+}
+
+.informationList {
+    width: 100%;
+    height: 404px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: none;
+}
+
+.informationTitle {
+    width: 100%;
+    height: 66px;
+    border: 1px solid #ddd;
+    display: flex;
+    line-height: 66px;
+}
+
+.seriaNumber {
+    width: 50px;
+    height: 66px;
+    border-right: 1px solid #ddd;
+}
+
+.informationTitle-name,
+.informationTitle-number,
+.informationTitle-valid {
+    width: 150px;
+    height: 66px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+    text-align: center;
+    line-height: 38px;
+    line-height: 66px;
+}
+
+.informationTitle-time {
+    width: 250px;
+    border-right: 1px solid #ddd;
+    height: 66px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+    text-align: center;
+    line-height: 38px;
+    line-height: 66px;
+}
+
+.informationTitle-user {
+    width: 200px;
+    height: 66px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+    text-align: center;
+    line-height: 38px;
+    line-height: 66px;
+}
+
+.informationTitle-describe {
+    width: 437px;
+    height: 66px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+    text-align: center;
+    line-height: 38px;
+    line-height: 66px;
+}
+
+.informationTitle-button {
+    width: 96px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.informationTitle-button button {
+    width: 89px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #0086FF;
+    color: white;
+}
+
+.cell {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.cell div {
+    line-height: 57px;
+    text-align: center;
+    font-size: 14px;
+    color: #909399;
+}
+
+.sequence {
+    width: 50px;
+    height: 57px;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.partNumber,
+.partName,
+.valid {
+    width: 149px;
+    height: 57px;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.creationTime {
+    width: 249px;
+    height: 57px;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.creator {
+    width: 199px;
+    height: 57px;
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+}
+
+.roleDescription {
+    width: 436px;
+    height: 57px;
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+}
+
+.check {
+    width: 96px;
+}
+
+.check button {
+    border: none;
+    background: none;
+    color: #0086FF;
+    margin-right: 10px;
+}
+
+.userManage {
+    margin: 15px;
+    height: 930px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    display: flex;
+    padding: 20px;
+    display: none;
+}
+
+.institution-query {
+    width: 300px;
+    height: 151px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+.institution-Title {
+    height: 58px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+
+.userMessage-Title {
+    width: 100%;
+    height: 883px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userSearch {
+    width: 100%;
+    height: 102px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.userSearch form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.userSearch form input {
+    width: 202px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.user-class,
+.institution-identityard,
+.telephone,
+.userID {
+    width: 23%;
+    height: 40px;
+    margin: 0 10px 22px 0;
+}
+
+.userSearch-inquire {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #0086FF;
+}
+
+.userinfo {
+    width: 100%;
+    height: 763px;
+    border: 1px solid #ddd;
+}
+
+.userinfo-Title {
+    width: 100%;
+    height: 58px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.userinfo-content {
+    width: 100%;
+    height: 705px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.userinfo-content-Title {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.userinfo-content-Title span {
+    width: 100%;
+    height: 61px;
+    display: inline-block;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #909399;
+    text-align: center;
+    line-height: 38px;
+}
+
+.userinfo-Id {
+    width: 50px;
+
+}
+
+.userinfo-loginID,
+.userinfo-cellphone {
+    width: 150px;
+}
+
+.userinfo-name {
+    width: 130px;
+}
+
+.userinfo-department {
+    width: 180px;
+}
+
+.userinfo-state {
+    width: 205px;
+}
+
+.userinfo-button {
+    width: 350px;
+    padding: 12px 0;
+}
+
+.userinfo-new {
+    width: 70px;
+    height: 40px;
+    background: #0086FF;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.userinfo-ToLead {
+    width: 70px;
+    height: 40px;
+    background: #f56c6c;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.manageCell {
+    width: 100%;
+    height: 51px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    line-height: 51px;
+    color: #909399;
+}
+.manageCell div{
+    overflow: hidden;
+}
+.userId {
+    width: 50px;
+}
+
+.loginID {
+    width: 150px;
+}
+
+.manageName {
+    width: 130px;
+}
+
+.manage-cellphone {
+    width: 150px;
+}
+
+.manage-department {
+    width: 180px;
+}
+
+.manage-state {
+    width: 205px;
+}
+
+.registrationAudit {
+    height: 592px;
+    margin: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.managebutton {
+    display: flex;
+    width: 350px;
+    padding: 12px 10px;
+}
+
+.managebutton button {
+    border: none;
+    background: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #0086FF;
+}
+
+.batch {
+    width: 98px;
+    height: 40px;
+}
+
+.registerBox {
+    width: 100%;
+    height: 488px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-Title {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    background: #fafafa;
+}
+
+.register-select {
+    width: 55px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-select span {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.register-name,
+.register-phone,
+.register-IDcard,
+.register-popedom,
+.register-type,
+.register-state,
+.register-operation {
+    width: 206px;
+    height: 48px;
+    font-weight: 700;
+    color: #000;
+    padding: 12px 10px;
+    box-sizing: border-box;
+}
+
+.audit-cell-box {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+}
+
+.audit-cell {
+    width: 100%;
+    height: 49px;
+    display: flex;
+}
+
+.audit-select {
+    width: 55px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audit-select span {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.audit-name,
+.audit-IDcard,
+.audit-phone,
+.audit-popedom,
+.audit-type,
+.audit-applyFor,
+.auditbutton {
+    width: 205px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #606266;
+}
+.auditbutton button{
+    border: none;
+    background: none;
+    color: #0086FF;
+    margin: 0 5px;
+}

@@ -8,6 +8,8 @@
     <title>生产主体库</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./css/production.css">
+    <link rel="icon" href="img/back.png">
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                 <li><a href="./production.html">成产主体库</a></li>
                 <li><a href="./namedManagement.html">命名管理</a></li>
                 <li><a href="./message.html">基础信息管理</a></li>
-                <li><a href="">系统管理</a></li>
+                <li><a href="./systemManage.html">系统管理</a></li>
             </ul>
         </div>
         <!-- 左边h1和选项列表  -->
@@ -93,9 +95,11 @@
                     </div>
                     <div class="industry">
                         <span>行业</span>
-                        <input type="radio" name="" value="">种植业
-                        <input type="radio" name="" value="">渔业
+                        <input type="radio" name="1" value="">种植业
+                        <input type="radio" name="1" value="">渔业
                     </div>
+
+
                     <div class="queryButton">
                         <button class="inquire">查询</button>
                         <button class="reset">重置</button>
@@ -117,36 +121,38 @@
                         <button class="export">导出</button>
                     </div>
                 </div>
-                <!-- <div class="cell">
-                <div class="subjectName">鲁港企业</div>
-                <div class="contacts">鲁港企业</div>
-                <div class="telephone">18887611013</div>
-                <div class="sort">个体户</div>
-                <div class="tissue">111</div>
-                <div class="matrix">鲁港企业</div>
-                <div class="location">鲁港企业</div>
-                <div class="check">
-                    <button>查看</button>
-                    <button>编辑</button>
+                <div class="informationList">
+
                 </div>
-                </div> -->
+                <div class="pagination">
+                    <button class="page">1</button>
+                    <button class="page">2</button>
+                </div>
             </div>
             <div class="fishProduction">
                 <div class="inforTitle">
-                    <span>主体名称</span>
-                    <span>联系人</span>
-                    <span>电话</span>
-                    <span>主体类别</span>
-                    <span>主体组织结构</span>
-                    <span>基地</span>
-                    <span>主体地址</span>
+                    <span>图斑ID</span>
+                    <span>地块塘命名</span>
+                    <span>街镇</span>
+                    <span>村居</span>
+                    <span>面积(亩)</span>
+                    <span>地块类型</span>
+                    <span>所属主体</span>
+                    <span>农产品分类</span>
+                    <span>品种</span>
                     <div class="importExport">
                         <button>新增</button>
-                        <button>导入</button>
-                        <button>导出</button>
+                        
                     </div>
                 </div>
+                <div class="fishProductionList"></div>
+                <div class="pagination">
+                <button class="pagetwo">1</button>
+                <button class="pagetwo">2</button>
             </div>
+            </div>
+            
+            
         </div>
     </section>
 
